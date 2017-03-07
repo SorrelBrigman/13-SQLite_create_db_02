@@ -29,7 +29,35 @@ db.run(`CREATE TABLE IF NOT EXISTS employees(id, firstName, lastName, jobTitle, 
 //   { id: 0, firstName: 'Fred', lastName: 'Smith', jobTitle: 'Cashier', address: '500 Somewhere Lane' },
 //   ...,
 // ]
+
+let employeeArray = [
+  {id: 1, firstName: 'Jemma', lastName: 'Simmons', jobTitle: 'Scientist', address: 'Secret S.H.E.I.L.D. base' },
+  {id: 2, firstName: 'Phillip', lastName: 'Colson', jobTitle: 'Director', address: 'Secret S.H.E.I.L.D. base' },
+  {id: 3, firstName: 'Leopold', lastName: 'Fitz', jobTitle: 'Scientist', address: 'Secret S.H.E.I.L.D. base' },
+  {id: 4, firstName: 'Daisy', lastName: 'Johnson', jobTitle: 'Agent Quake', address: 'not disclosed' },
+  {id: 5, firstName: 'Melinda', lastName: 'May', jobTitle: 'Field Agent', address: 'on assignment' },
+  {id: 6, firstName: 'Alphonso', lastName: 'Mackenzie', jobTitle: 'Inhuman Director', address: 'Secret S.H.E.I.L.D. base' },
+  {id: 7, firstName: 'Bobbi', lastName: 'Morris', jobTitle: 'Field Agent', address: 'on assignment' },
+  {id: 8, firstName: 'Lance', lastName: 'Hunter', jobTitle: 'Hired Gun', address: 'Secret S.H.E.I.L.D. base' }
+]
+
+
 // Insert each of the employee objects into the database.
+const populateEmployees = ()=>{
+
+  employeeArray.forEach((each)=>{
+    db.run(`INSERT INTO employees VALUES(
+      ${each.id},
+      "${each.firstName}",
+      "${each.lastName}",
+      "${each.jobTitle}",
+      "${each.address}")`, (err)=>{
+        errorHandler(err);
+      })
+
+  })
+}
+populateEmployees();
 
 // Write a statement to query the database and console.log() all employee records.
 
