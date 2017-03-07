@@ -56,11 +56,26 @@ const populateEmployees = ()=>{
       })
 
   })
-}
-populateEmployees();
+};
+
+//Comment out populate Employees if not in use
+// populateEmployees();
 
 // Write a statement to query the database and console.log() all employee records.
 
+db.all(`SELECT * FROM employees`, (err, allRows)=>{
+  errorHandler(err);
+  console.log(allRows);
+});
+
 // Write a statement to query the database and console.log() each employees jobTitle.
+db.all(`SELECT jobTitle FROM employees`, (err, allRows)=>{
+  errorHandler(err);
+  console.log(allRows);
+});
 
 // Write a statement to query the database and console.log() each employees firstName, lastName and address only.
+db.all(`SELECT firstName || " " || lastName AS Name, address FROM employees`, (err, allRows)=>{
+  errorHandler(err);
+  console.log(allRows);
+});
