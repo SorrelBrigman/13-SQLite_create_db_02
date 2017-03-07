@@ -1,0 +1,68 @@
+{
+    "employees": [
+        {
+            "id": "1",
+            "firstName": "Jemma",
+            "lastName": "Simmons",
+            "jobTitle": "Scientist",
+            "address": "SecretS.H.E.I.L.D.base",
+            "salary": 80000
+        },
+        {
+            "id": "2",
+            "firstName": "Phillip",
+            "lastName": "Colson",
+            "jobTitle": "Director",
+            "address": "SecretS.H.E.I.L.D.base",
+            "salary": 100000
+        },
+        {
+            "id": "3",
+            "firstName": "Leopold",
+            "lastName": "Fitz",
+            "jobTitle": "Scientist",
+            "address": "SecretS.H.E.I.L.D.base",
+            "salary": 75000
+        },
+        {
+            "id": "4",
+            "firstName": "Daisy",
+            "lastName": "Johnson",
+            "jobTitle": "AgentQuake",
+            "address": "notdisclosed",
+            "salary": 70000
+        },
+        {
+            "id": "5",
+            "firstName": "Melinda",
+            "lastName": "May",
+            "jobTitle": "FieldAgent",
+            "address": "onassignment",
+            "salary": 90000
+        },
+        {
+            "id": "6",
+            "firstName": "Alphonso",
+            "lastName": "Mackenzie",
+            "jobTitle": "InhumanDirector",
+            "address": "SecretS.H.E.I.L.D.base",
+            "salary": 80000
+        },
+        {
+            "id": "7",
+            "firstName": "Bobbi",
+            "lastName": "Morris",
+            "jobTitle": "FieldAgent",
+            "address": "onassignment",
+            "salary": 79000
+        },
+        {
+            "id": "8",
+            "firstName": "Lance",
+            "lastName": "Hunter",
+            "jobTitle": "HiredGun",
+            "address": "SecretS.H.E.I.L.D.base",
+            "salary": 65000
+        }
+    ]
+}
